@@ -1,0 +1,10 @@
+[Core]
+name = typetalk
+module = typetalk
+
+[Documentation]
+description = Backend for Typetalk for Errbot
+
+[Python]
+version = 3
+
