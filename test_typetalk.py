@@ -1,4 +1,4 @@
-pytest_plugins = ["errbot.backends.test"]
+import typetalk
 
 extra_plugin_dir = '.'
 
