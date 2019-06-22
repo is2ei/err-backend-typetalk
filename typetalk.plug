@@ -3,8 +3,7 @@ name = typetalk
 module = typetalk
 
 [Documentation]
-description = Backend for Typetalk for Errbot
+description = This is Typetalk backend for Errbot.
 
 [Python]
 version = 3
-
