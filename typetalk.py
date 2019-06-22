@@ -10,7 +10,6 @@ class Typetalk(BotPlugin):
         """
         Triggers on plugin activation
 
-        You should delete it if you're not using it to override any default behaviour
         """
         super(Typetalk, self).activate()
 
@@ -18,7 +17,6 @@ class Typetalk(BotPlugin):
         """
         Triggers on plugin deactivation
 
-        You should delete it if you're not using it to override any default behaviour
         """
         super(Typetalk, self).deactivate()
 
@@ -26,10 +24,10 @@ class Typetalk(BotPlugin):
         """
         Defines the configuration structure this plugin supports
 
-        You should delete it if your plugin doesn't use any configuration like this
         """
-        return {'EXAMPLE_KEY_1': "Example value",
-                'EXAMPLE_KEY_2': ["Example", "Value"]
+        return {
+            'EXAMPLE_KEY_1': "Example value",
+            'EXAMPLE_KEY_2': ["Example", "Value"]
                }
 
     def check_configuration(self, configuration):
@@ -38,7 +36,6 @@ class Typetalk(BotPlugin):
 
         Raise a errbot.ValidationException in case of an error
 
-        You should delete it if you're not using it to override any default behaviour
         """
         super(Typetalk, self).check_configuration(configuration)
 
@@ -46,23 +43,18 @@ class Typetalk(BotPlugin):
         """
         Triggers when bot is connected
 
-        You should delete it if you're not using it to override any default behaviour
         """
         pass
 
     def callback_message(self, message):
         """
-        Triggered for every received message that isn't coming from the bot itself
 
-        You should delete it if you're not using it to override any default behaviour
         """
         pass
 
     def callback_botmessage(self, message):
         """
-        Triggered for every message that comes from the bot itself
 
-        You should delete it if you're not using it to override any default behaviour
         """
         pass
 
@@ -90,4 +82,4 @@ class Typetalk(BotPlugin):
         if args.favorite_number is None:
             return f'Hello {args.name}.'
         else:
-            return f'Hello {args.name}, I hear your favorite number is {args.favorite_number}.'
+            return f'Hello {args.name}, number is {args.favorite_number}.'
