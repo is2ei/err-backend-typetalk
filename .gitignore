@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Errbot
+data/*
+config.py
+config-template.py
+err.log
